@@ -69,7 +69,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (value === '') {
           encodedParams.push(encodeURIComponent(key));
 
-        } else if (value || value === 0) {
+        } else if (value || value === 0 || value === false) {
           encodedParams.push(
               encodeURIComponent(key) +
               '=' +
